@@ -21,7 +21,7 @@ window.onclick = function(event) {
 }
 
 
-screenshot.onclick = function(event){
+if (screenshot) screenshot.onclick = function(event){
     var aCanvas = document.getElementById("glCanvas"),
         ctx =  aCanvas.getContext("webgl2", {preserveDrawingBuffer: true});
     ;
